@@ -49,7 +49,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             - name: PG_DSN
-              value: "postgresql+asyncpg://user:password@alphagram-postgresql:5432/alphagram-db"
+              value: "postgresql+asyncpg://user:password@alphagram-postgresql:5432/alphagram"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
