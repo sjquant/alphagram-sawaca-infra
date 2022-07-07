@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: alphagram
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "1.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -85,6 +85,6 @@ affinity: {}
 postgresql:
   enabled: true
   auth:
-    database: alphagram
+    database: alphagram-db
     username: user
-    passsword: password
+    password: password
